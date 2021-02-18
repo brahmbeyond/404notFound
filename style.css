@@ -1,0 +1,112 @@
+.top{
+  font-size:15px;
+  margin-left:55px;
+   font-family:"Shadows Into Light","Trebuchet MS",sans-serif;
+}
+.box{
+  display:flex;
+  padding:50px;
+  margin-top:-40px;
+}
+.img, .error{
+  padding:50px;
+}
+
+.head{
+  font-size:30px;
+ font-family:"Fredericka the Great","Courier New",monospace;
+}
+.content{
+  font-size:55px;
+font-family:"Tangerine","Brush Script MT", cursive;
+font-weight:bold;
+}
+
+  .button {
+  background-color:#333333; /* Green */
+  border: none;
+  color: white;
+  padding: 19px 33px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+.button:hover{
+background-color:rgb(62, 9, 114);
+}
+
+img{
+  width:500px;
+  height:500px;
+}
+
+img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.error{
+  text-align:center;
+}
+
+@media (max-width:750px)
+{
+  .top{
+    font-size:10px;
+    margin-left:20px;
+  }
+  .box{
+    padding:0px;
+    margin-top:-20px;
+display:flex;
+flex-flow:column wrap;
+text-align:center;
+  }
+  
+  img{
+  width:200px;
+  height:200px;
+margin:0px;
+}
+  
+.img, .error{
+  padding:25px;
+}  
+
+.head{
+  font-size:17px;
+ 
+}
+.content{
+  font-size:25px;
+
+}
+  .button {
+
+  padding: 12px 25px;
+  font-size: 7px;
+align:center;
+}
+
+
+}
+
+
